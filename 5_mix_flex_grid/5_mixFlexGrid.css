@@ -1,0 +1,91 @@
+/* RESET */
+ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
+
+:root {
+  --color-1: #edede9;
+  --color-2: #d6ccc2;
+  --color-3: #f5ebe0;
+  --color-4: #e3d5ca;
+  --color-5: #d5bdaf;
+  --color-6: #457b9d;
+
+  --element-width: 300px;
+  --element-height: 100px;
+  --element-spacing: 15px;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.65;
+  padding: 2rem;
+  background-color: var(--color-4);
+  color: var(--color-6);
+  font: 16px "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+header > img {
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: baseline;
+  height: 100%;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+header nav li {
+  margin-right: 15px;
+  font-weight: 900;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: fit-content(20ch) minmax(min(50vw, 30ch), 1fr);
+}
+
+#content nav {
+  margin-right: 15px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--element-width), 1fr));
+  grid-gap: 2rem;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-columns: fit-content(20ch) minmax(min(50vw, 30ch), 1fr);
+}
+
+article {
+  display: flex;
+  flex-flow: column;
+  background: var(--color-1);
+  padding: 2rem;
+}
+
+article > img {
+  /* La propriété order définit l'ordre avec lequel on dessine les éléments d'un conteneur d'éléments flexibles ou d'une grille d'éléments */
+  /* ordre croissant des valeurs  */
+  order: -1;
+  align-self: center;
+  width: 100%;
+}
