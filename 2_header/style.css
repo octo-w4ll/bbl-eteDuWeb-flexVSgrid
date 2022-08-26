@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr auto auto;
+  grid-template-areas: "logo . title . user profile-logo";
+  gap: 2ch;
+
+  background: rgb(255, 201, 53);
+  padding: 1ch;
+  align-items: center;
+}
+
+header > img.logo {
+  grid-area: logo;
+}
+
+header > h1 {
+  grid-area: title;
+  border: 1px solid green;
+  border-radius: 100vmax;
+  padding: 1ch;
+  margin: 0;
+}
+
+header > p.username {
+  grid-area: user;
+}
+
+header > img.profile {
+  grid-area: profile-logo;
+
+  border-radius: 100vmax;
+  border: 3px solid black;
+  padding: 0.3ch;
+  height: 1rem;
+}
