@@ -1,0 +1,14 @@
+{
+  "name": "bbl-eteDuWeb-flexVSgrid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:octo-w4ll/bbl-eteDuWeb-flexVSgrid.git",
+  "author": "\"\"",
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^14.0.1"
+  },
+  "scripts": {
+    "2": "serve ./2_header"
+  }
+}
